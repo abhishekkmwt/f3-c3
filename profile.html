@@ -20,7 +20,10 @@
                 <img src="./assets/Vector(1).png" alt="img2">
             </div>
             <div class="details">
-                
+                <p class="normal">Full Name : Name</p>
+                <p class="normal">Email : example@gmail.com</p>
+                <p class="notNormal">Token :token_No</p>
+                <p class="normal">Password :******</p>
             </div>
             <div class="btn">
                 <button type="submit" id="logout">LOGOUT</button>
@@ -31,10 +34,10 @@
     <script>
         const obj=JSON.parse(sessionStorage.getItem('loggedInUser'));
         const detailsDiv=document.querySelector('.main-2 .details');
-        detailsDiv.innerHTML=`<p>Full Name : ${obj.name}</p>
-                <p>Email : ${obj.email}</p>
-                <p>Token : ${obj.token}</p>
-                <p>Password : ${obj.password}</p>`;
+        detailsDiv.innerHTML=` <p class="normal">Full Name : ${obj.name}</p>
+                <p class="normal">Email : ${obj.email}</p>
+                <p class="notNormal">Token : ${obj.token}</p>
+                <p class="normal">Password : ${obj.password}</p>`;
         
         const logoutBtn=document.getElementById('logout');
         logoutBtn.addEventListener('click',()=>{

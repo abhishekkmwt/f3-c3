@@ -153,3 +153,29 @@ form button{
     font-weight: 500;
     font-size: 1.5rem;
 }
+
+
+@media only screen and (min-width:350px) and (max-width:800px){
+    form{
+        width: 58vw;
+        margin-top: 7rem;
+    }
+
+    .signup-text{
+        font-size: 1.2rem;
+    }
+
+    .main-container{
+        width: 50vw;
+    }
+    .main-container .details .normal{
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+
+    .main-container .details .notNormal{
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
