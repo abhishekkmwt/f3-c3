@@ -154,15 +154,20 @@ form button{
     font-size: 1.5rem;
 }
 
-
-@media only screen and (min-width:350px) and (max-width:800px){
+@media only screen  and (max-width:380px){
+    *{
+        font-size: 13px;
+    }
+}
+@media only screen and (min-width:350px) and (max-width:900px){
+   
     form{
         width: 58vw;
         margin-top: 7rem;
     }
 
     .signup-text{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .main-container{
